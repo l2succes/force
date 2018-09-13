@@ -12,5 +12,6 @@
   "[json]": {
     "editor.formatOnSave": false
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "debug.node.autoAttach": "on"
 }

@@ -1,16 +1,17 @@
 {
   "presets": [
+    "@babel/typescript",
+    "@babel/react",
     ["@babel/env", {
       "targets": {
         "browsers": ["last 2 versions"]
       }
-    }],
-    "@babel/react",
-    "@babel/preset-typescript",
-    "@babel/stage-3"
+    }]
   ],
   "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
     "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-class-properties",
     ["babel-plugin-styled-components", {
       "ssr": true,
       "displayName": true
