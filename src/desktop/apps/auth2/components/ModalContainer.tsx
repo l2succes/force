@@ -5,7 +5,7 @@ import { handleSubmit, setCookies } from '../helpers'
 import { data as sd } from 'sharify'
 const mediator = require('../../../lib/mediator.coffee')
 
-export const ModalContainer: React.SFC<any> = () => {
+export const ModalContainer = () => {
   let manager: ModalManager | null
 
   mediator.on('open:auth', options => {

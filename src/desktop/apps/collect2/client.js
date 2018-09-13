@@ -24,7 +24,6 @@ buildClientApp({
       <Container>
         <ClientApp mediator={mediator} />
       </Container>,
-
       document.getElementById('react-root')
     )
   })

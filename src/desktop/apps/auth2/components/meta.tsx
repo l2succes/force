@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import React from 'react'
 
 interface MetaProps {
@@ -8,7 +7,7 @@ interface MetaProps {
   }
 }
 
-export const AuthenticationMeta: React.SFC<MetaProps> = props => {
+export const AuthenticationMeta = (props: MetaProps) => {
   const { meta: { description, title } } = props
 
   return (
@@ -20,8 +19,4 @@ export const AuthenticationMeta: React.SFC<MetaProps> = props => {
       <meta property="twitter:description" content={description} />
     </div>
   )
-}
-
-AuthenticationMeta.propTypes = {
-  meta: PropTypes.object,
 }

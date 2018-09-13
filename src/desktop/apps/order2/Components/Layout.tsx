@@ -1,7 +1,7 @@
-import React, { SFC } from 'react'
+import React from 'react'
 
 interface Props {}
 
-export const Layout: SFC<Props> = (_props) => {
+export const Layout = (_props: Props) => {
   return <div>Layout</div>
 }
